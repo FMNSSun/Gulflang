@@ -1,0 +1,38 @@
+\=
+ P - the standard library.
+ 
+ (c) the Octogulf people
+\
+
+\== PVersion
+ =desc   Can be used to obtain the version number of this standard library.
+         1 -- og 0.0.1
+ =return integer Version number
+\
+PVersion {
+  1
+}
+
+
+\== Max
+ =desc   Returns the number who is the largest among the two.
+ =param integer a First number
+ =param integer b Second number
+ =return Largest value
+\
+Max a b {
+  if >a b { a }
+  else { b }
+}
+
+
+\== Min
+ =desc   Returns the number who is the smallest among the two.
+ =param integer a First number
+ =param integer b Second number
+ =return Smallest value
+\
+Min a b {
+  if <a b { a }
+  else { b }
+}
